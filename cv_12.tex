@@ -1,0 +1,241 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy CV/Resume
+% XeLaTeX Template
+% Version 1.0 (5/5/2014)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Debarghya Das (http://www.debarghyadas.com)
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\lastupdated % Print the Last Updated text at the top right
+
+\namesection{Yifu}{Wang}{ % Your name
+\urlstyle{same}\url{https://www.linkedin.com/in/yifuwang} \\ % Your website, LinkedIn profile or other web address
+\href{mailto:yifuwang92@gmail.com}{yifuwang92@gmail.com} | 626.226.6282 % Your contact information
+}
+
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%------------------------------------------------
+% Education
+%------------------------------------------------
+
+\section{Education} 
+
+\subsection{Carnegie Mellon UNIV}
+
+\descript{MS in Computer Science}
+\location{June 2016 | Pittsburgh, PA}
+
+\sectionspace % Some whitespace after the section
+
+\subsection{Dalian Univ of Tech}
+
+\descript{BS in Computer Science}
+\location{June 2014 | Dalian, China}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Links
+%------------------------------------------------
+
+\section{Links} 
+
+Github:// \href{https://github.com/wangyifu}{\bf https://github.com/wangyifu} \\
+LinkedIn:// \href{https://www.linkedin.com/in/yifuwang}{\bf yifuwang} \
+\
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Coursework
+%------------------------------------------------
+
+\section{Coursework}
+
+\subsection{Graduate}
+
+Search Engine \\
+Cloud Computing \\
+Machine Learning \\
+Advanced Data Structure and Algorithms \\
+Convolutional Neural Networks for Visual Recognition \\
+
+{\footnotesize \textit{\textbf{(Teaching Assistant) }}} \\
+Data Structures for Application Programmers \\
+JAVA for Application Programmers
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\subsection{Undergraduate}
+
+Operating System \\
+Compiler Techniques \\
+Database Systems \\
+Computer Network \\
+Computer Architecture \\
+Data Structure and Algorithms \\
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Skills
+%------------------------------------------------
+
+\section{Skills}
+
+\subsection{Programming}
+Python \textbullet{} Java \textbullet{} C++
+\sectionspace
+\subsection{Libraries \& Platforms}
+\textbullet{} Pytorch \textbullet{} OpenCV \textbullet{} Xgboost \textbullet{} gtest
+\sectionspace
+\subsection{Everyday Using}
+ElasticSearch \textbullet{} Docker \textbullet{} AWS \textbullet{} Splunk
+
+\sectionspace % Some whitespace after the section
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the left column
+\hfill
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+
+\section{Experience}
+
+\runsubsection{Adobe Systems}
+\descript{ | Member of Technical Staff}
+\location{July 2016 – Now | San Jose, CA}
+
+\sectionspace
+
+\descript{Content Analyzer Service}
+\location{Docker, Flask, Spring, protobuf, json-schema}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item Worked as Main developer of Content Analyzer Service, a RESTful microservice framework for deep learning analyzer. The goal is to let research scientists onboard their model in a day.
+\item It supports most popular deep learning frameworks in C++, Python and Java. It supports CPU-bound and IO-bound mode.
+\item Deployed on production environment with ~3k RPM for each region.
+\end{tightitemize}
+\descript{Car Brand Search}
+\location{Pytorch, transfer learning}
+\begin{tightitemize}
+\item Trained a deep learning model for car brand search
+\item Using exacted feature from ResNet and VGGNet as input, built a two layer FC network. Achieves 95\% accuracy.
+\item Proved this approach can easily apply to other categories.
+\end{tightitemize}
+\descript{Salability Analyzer}
+\location{ElasticSearch, Xgboost}
+\begin{tightitemize}
+\item Fetched 500k image data from inner ElasticSearch service
+\item Using image feature, aesthetic data, visual similarity feature, tagging similarity feature to predict future sales in 6 month.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{Quixey, Inc}
+\descript{| Software Engineer Intern}
+\location{May 2015 – August 2015 | Mountain View, CA}
+
+\sectionspace
+
+\descript{Chinese Query Tokenizer}
+\begin{tightitemize}
+\item Implemented Chinese query tokenizer based on dictionary and statistical language model. Developed RESTful web service.
+\item 40\% faster and 1.6\% DCG score gain in performance test.
+\item Pushed to production in Quixey app search and auto suggestion.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{VMware, Inc}
+\descript{| Software Engineer Intern}
+\location{August 2013 – February 2014 | Beijing, China}
+
+\sectionspace
+
+\descript{QE dashboard}
+\begin{tightitemize}
+\item Developed QE dashboard based on LAMP stack for visualizing QE progress, submit QE report, generate chart in excel and PDF format.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Project
+%------------------------------------------------
+
+\section{Personal Project}
+
+\runsubsection{Cornell Robot Learning Lab}
+\descript{| Head Undergrad Research}
+
+\location{Jan 2014 – Present | Ithaca, NY}
+Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which learns from large scale user preference feedback to plan robot trajectories in human environments. Publication submitted.
+
+\sectionspace % Some whitespace after the section
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+%	SECOND PAGE (EXAMPLE)
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%\section{Example Section}
+
+%\end{minipage} % The end of the left column
+%\hfill
+%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%\section{Example Section 2}
+
+%\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
