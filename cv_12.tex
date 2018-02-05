@@ -82,8 +82,9 @@ LinkedIn:// \href{https://www.linkedin.com/in/yifuwang}{\bf yifuwang} \
 Search Engine \\
 Cloud Computing \\
 Machine Learning \\
-Advanced Data Structure and Algorithms \\
-Convolutional Neural Networks for Visual Recognition \\
+Adv. Data Structure and Algorithms \\
+Convolutional Neural Networks for \\
+Visual Recognition \\
 
 {\footnotesize \textit{\textbf{(Teaching Assistant) }}} \\
 Data Structures for Application Programmers \\
@@ -145,25 +146,27 @@ ElasticSearch \textbullet{} Docker \textbullet{} AWS \textbullet{} Splunk
 \sectionspace
 
 \descript{Content Analyzer Service}
-\location{Docker, Flask, Spring, protobuf, json-schema}
+\location{Docker, Flask, uwsgi, protobuf, json-schema, Elasticsearch}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightitemize}
-\item Worked as Main developer of Content Analyzer Service, a RESTful microservice framework for deep learning analyzer. The goal is to let research scientists onboard their model in a day.
-\item It supports most popular deep learning frameworks in C++, Python and Java. It supports CPU-bound and IO-bound mode.
-\item Deployed on production environment with ~3k RPM for each region.
+\item Main developer of Content Analyzer Service, a RESTful microservice framework for deep learning analyzer. The goal is to let research scientists deploy their model as a web service in a day.
+\item It provides most popular deep learning frameworks in C++, Python and Java. 
+\item It supports CPU-bound and IO-bound analyzers.
+\item Currently running on production environment with ~3k RPM in every region.
 \end{tightitemize}
 \descript{Car Brand Search}
 \location{Pytorch, transfer learning}
 \begin{tightitemize}
-\item Trained a deep learning model for car brand search
+\item Trained a deep learning model for car brand search.
 \item Using exacted feature from ResNet and VGGNet as input, built a two layer FC network. Achieves 95\% accuracy.
-\item Proved this approach can easily apply to other categories.
+\item Proved this approach can be easily transferred to other categories.
 \end{tightitemize}
 \descript{Salability Analyzer}
 \location{ElasticSearch, Xgboost}
 \begin{tightitemize}
-\item Fetched 500k image data from inner ElasticSearch service
-\item Using image feature, aesthetic data, visual similarity feature, tagging similarity feature to predict future sales in 6 month.
+\item Fetched 1 million image data from AdobeStock
+\item Using image feature, aesthetic data, visual similarity features, tagging similarity features to predict salability score.
+\item Got mean absolute error(MAE) of 0.15
 \end{tightitemize}
 
 \sectionspace % Some whitespace after the section
@@ -178,8 +181,9 @@ ElasticSearch \textbullet{} Docker \textbullet{} AWS \textbullet{} Splunk
 
 \descript{Chinese Query Tokenizer}
 \begin{tightitemize}
-\item Implemented Chinese query tokenizer based on dictionary and statistical language model. Developed RESTful web service.
-\item 40\% faster and 1.6\% DCG score gain in performance test.
+\item Implemented Chinese query tokenizer based on dictionary and statistical language model. 
+\item Developed RESTful web service using Jetty.
+\item 40\% faster and 1.6\% DCG score gain compared with previous tokenizer.
 \item Pushed to production in Quixey app search and auto suggestion.
 \end{tightitemize}
 
@@ -195,22 +199,8 @@ ElasticSearch \textbullet{} Docker \textbullet{} AWS \textbullet{} Splunk
 
 \descript{QE dashboard}
 \begin{tightitemize}
-\item Developed QE dashboard based on LAMP stack for visualizing QE progress, submit QE report, generate chart in excel and PDF format.
+\item Developed QE dashboard based on LAMP stack for visualizing QE progress, submit test report, generate chart in excel and PDF format.
 \end{tightitemize}
-
-\sectionspace % Some whitespace after the section
-
-%------------------------------------------------
-% Project
-%------------------------------------------------
-
-\section{Personal Project}
-
-\runsubsection{Cornell Robot Learning Lab}
-\descript{| Head Undergrad Research}
-
-\location{Jan 2014 – Present | Ithaca, NY}
-Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which learns from large scale user preference feedback to plan robot trajectories in human environments. Publication submitted.
 
 \sectionspace % Some whitespace after the section
 
