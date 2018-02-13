@@ -86,9 +86,8 @@ Adv. Data Structure and Algorithms \\
 Convolutional Neural Networks for \\
 Visual Recognition \\
 
-{\footnotesize \textit{\textbf{(Teaching Assistant) }}} \\
-Data Structures for Application Programmers \\
-JAVA for Application Programmers
+{\footnotesize \textit{\textbf{(TA) }}} Data Structures for Application Programmers \\
+{\footnotesize \textit{\textbf{(TA) }}} JAVA for Application Programmers
 
 \sectionspace % Some whitespace after the section
 
@@ -118,7 +117,7 @@ Python \textbullet{} Java \textbullet{} C++  \textbullet{} SQL \textbullet{} bas
 Pytorch \textbullet{} OpenCV \textbullet{} Xgboost \textbullet{} gtest \textbullet{} CMake
 \sectionspace
 \subsection{Everyday Using}
-ElasticSearch \textbullet{} Docker \textbullet{} AWS \textbullet{} INotebook \textbullet{} Git
+ElasticSearch \textbullet{} Docker \textbullet{} AWS \textbullet{} Git \textbullet{} Jupyter Notebook 
 
 \sectionspace % Some whitespace after the section
 
@@ -145,29 +144,25 @@ ElasticSearch \textbullet{} Docker \textbullet{} AWS \textbullet{} INotebook \te
 
 \sectionspace
 
-\descript{Content Analyzer Service}
-\location{microservice, Docker, Flask, uwsgi, protobuf, json-schema, Elasticsearch}
+\descript{Content Analyzer Service(CAS)}
+\location{microservice, Docker, Flask, protobuf, json-schema, Elasticsearch}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightitemize}
 \item Main developer of CAS, a deep learning as a service framework. 
-\item The goal is to let researcher develop the model as a RESTful web service in a day.
-\item Functionality including but not limited to: test, deploy, monitor, scale
-\item Integrated popular deep learning frameworks: Caffe, Tensorflow, Pytorch
-\item Allows models to use CPU, GPU or Elasticsearch by switching config
-\item Supported analyzers written in C++, Python, and Java. 
-\item Launched into the production environment with ~3k RPM in every region.
+\item Let researcher deploy model as a RESTful web service in a day. Implemented features like unit test, validation, monitoring, logging, auto-scaling.
+\item Built docker base images in C++ / Python / Java with popular deep learning frameworks like Caffe, Tensorflow, Pytorch
+\item Supported CPU, GPU or Elasticsearch modes
+\item Launched into the production environment with ~3k RPM(Request per Minute) in every region. Currently has 11 analyzers running.
 \end{tightitemize}
 
 \sectionspace
 
 \descript{Salability Analyzer}
-\location{ElasticSearch, Xgboost, AWS, Docker}
+\location{Machine Learning, ElasticSearch, gradient boosting tree, AWS}
 \begin{tightitemize}
-\item Fetched 1 million image data from AdobeStock as training dataset
 \item Feature includes: image demand, image aesthetic value, visual similarity feature, tagging similarity feature
-\item The target is defined as 6-month download normalized by clicks during the period
-\item Got MAE(mean absolute error): 0.15, 10-DCG: 0.88
-\item Deployed to Adobe Contributor Pipeline
+\item Got NDCG(Normalized discounted cumulative gain)@10 = 0.88
+\item Integrated to Adobe Contributor Pipeline
 \end{tightitemize}
 
 \sectionspace % Some whitespace after the section
@@ -175,11 +170,9 @@ ElasticSearch \textbullet{} Docker \textbullet{} AWS \textbullet{} INotebook \te
 \descript{Car Brand Search}
 \location{Pytorch, transfer learning}
 \begin{tightitemize}
-\item Validated the similarity model can be applied to specific categories
 \item Trained a transfer learning model for car brand search
-\item Fetched 500k image from AdobeStock with related category and title
-\item Extracted feature vector from ResNet and VGGNet
-\item Built a two-layer Fully Connected Network with dropout. Achieves 95\% accuracy
+\item Fetched 50 thousand car image of 10 categories from AdobeStock
+\item Extracted feature vector from pre-trained ResNet and VGGNet model. Built a two-layer Fully Connected Network with dropout. Achieves 89\% accuracy
 \end{tightitemize}
 
 \sectionspace
@@ -195,10 +188,10 @@ ElasticSearch \textbullet{} Docker \textbullet{} AWS \textbullet{} INotebook \te
 \descript{Chinese Query Tokenizer}
 \location{Java, MongoDB, AWS, Hadoop}
 \begin{tightitemize}
-\item Implemented Chinese query tokenizer based on the dictionary and statistical language model. 
-\item Developed RESTful web service using Jetty.
-\item 40\% faster and 1.6\% DCG score gain compared with the previous tokenizer.
-\item Integrated to Quixey app search and auto-suggestion.
+\item Implemented Chinese query tokenizer based on the dictionary and statistical language model
+\item Developed RESTful web service using Jetty
+\item 40\% faster and 1.6\% DCG score gain compared with the previous tokenizer
+\item Integrated to Quixey app search and auto-suggestion
 \end{tightitemize}
 
 \sectionspace % Some whitespace after the section
@@ -214,7 +207,7 @@ ElasticSearch \textbullet{} Docker \textbullet{} AWS \textbullet{} INotebook \te
 \descript{QE dashboard}
 \location{PHP, MySQL, Javascript}
 \begin{tightitemize}
-\item Developed QE dashboard based on LAMP stack for visualizing QE progress, updating QE result, and generating result chart in excel and PDF format.
+\item Developed QE dashboard based on LAMP stack for visualizing QE progress, updating QE result, and generating result chart in excel and PDF format
 \end{tightitemize}
 
 \sectionspace % Some whitespace after the section
